@@ -39,12 +39,12 @@ jobs:
 
       - name: Build Birthday Love
         working-directory: mwqaa-2008
-        run: pnpm --filter @workspace/birthday-love build
+        run: pnpm build
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: mwqaa-2008/artifacts/birthday-love/dist/public
+          path: mwqaa-2008/dist
 
   deploy:
     environment:
