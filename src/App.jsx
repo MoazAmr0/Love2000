@@ -142,7 +142,7 @@ function Home() {
           </div>
           <div className="final-love-layout">
             <figure className="final-love-photo">
-              <img src="/assets/love-photo.jpeg" alt="صورة تجمع حلمنا الجميل" />
+              <img src={`${import.meta.env.BASE_URL}assets/love-photo.jpeg`} alt="صورة تجمع حلمنا الجميل" />
               <figcaption>صورة لحلمنا الجميل</figcaption>
             </figure>
             <article className="final-love-letter">
