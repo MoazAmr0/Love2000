@@ -31,20 +31,18 @@ jobs:
         with:
           node-version: 22
           cache: pnpm
-          cache-dependency-path: mwqaa-2008/pnpm-lock.yaml
+          cache-dependency-path: pnpm-lock.yaml
 
       - name: Install dependencies
-        working-directory: mwqaa-2008
         run: pnpm install --frozen-lockfile
 
       - name: Build Birthday Love
-        working-directory: mwqaa-2008
         run: pnpm build
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: mwqaa-2008/dist
+          path: dist
 
   deploy:
     environment:
