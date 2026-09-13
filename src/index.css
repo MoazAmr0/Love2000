@@ -2222,9 +2222,9 @@
 
 .final-love-layout {
   display: grid;
-  grid-template-columns: minmax(340px, 1fr) minmax(0, 1.08fr);
+  grid-template-columns: minmax(0, 1.3fr) minmax(0, 0.9fr);
   align-items: start;
-  gap: clamp(34px, 7vw, 100px);
+  gap: clamp(24px, 4vw, 60px);
 }
 
 .final-love-photo {
