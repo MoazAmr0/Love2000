@@ -3,11 +3,11 @@
     "tasks": [
         {
             "label": "Start Birthday Love",
-            "type": "process",
-            "command": "pnpm.cmd",
-            "args": ["--filter", "@workspace/birthday-love", "dev"],
+            "type": "shell",
+            "command": "cmd",
+            "args": ["/c", "pnpm.cmd", "dev"],
             "options": {
-                "cwd": "${workspaceFolder}/mwqaa-2008"
+                "cwd": "${workspaceFolder}"
             },
             "isBackground": true,
             "problemMatcher": {
